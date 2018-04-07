@@ -52,8 +52,11 @@ app.get('/api/food', (req, res, next) => {
 });
 
 server.listen(port, () => {
+	if (port >= 4300 && port < 4305) {
+		return console.log(`The server is running at http://localhost:${port}`);
+	}
   console.log(
-    `The server is running at http://localhost:${port}`
+    `The server is running at https://wistore-server.herokuapp.com:${process.env.PORT}`
   );
 });
 
