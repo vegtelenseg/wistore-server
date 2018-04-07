@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "foodspy-a3640",
+  "private_key_id": "fa40e85ea7b6138f62e83404bca051dcab106d53",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCq2At5qJllh3vN\nj011i8+i6rtvQjIXfH+FldXn9ylQ0ud1e68AwcPbAj5lf4ISCE9Vn0COvGNMtJb5\nsvG3mmiYM8XLdSnSS2m/vIwdLIeOnDgSQdXy3qaZRq7Yz09fQ2hTQ8JJ6ATFYwHN\n2Ot9gIO5jO3e/U1GLNb0hzxwQeaEcXv9DNp28bJFZEsvjVyLW1KiPp56+uuqPt7u\nyn4cqz4RZyzD8cryKY7lubn9blGrlAD4nv0CGMWwFJ10uxj0NzrpIoNsBN7ikW8q\n0cGKUoFOjpA+toMey8Ow21jbcWbww6RGmksrXsiKFmJq4weObyv1MspIlmADjv/F\nZmxo4/SZAgMBAAECggEABD+co3EdpXB10/IPGU/5gSHouNbS05IxQqNr/xl+oceo\n4VtKyhBHfFQFNLVzyNqDjIvKCXKmXoM0KO/6AliY5sYM0mcuu8/LyKyZ6GTR1ypL\n26pe9WvzhSbElNgs71/IAaAS/g8CxVzVr+aHzqZqQCxAwxWV/RuC2fBeAKWm4567\ncY78uVOrz3Hr7UK1/a4PhiiPPdqwaIMAR3h9q8Vkt3sSKxzMQwJyRXqN4D37HBxM\n1+oQrJZ22D5Mnh9PpI5bqwQL/qfhmCBQYBmmM7EjxrMDnjg01aL1PAor2vIP88gO\nEG18x+MJwXY4qoc+6yBt7efdt6bFnIIdB3HZ+dY5gQKBgQDSVWdOwM5ptkgzMcUT\nHChMJFVRqu4Z+VHhbo8lqC834numJu3GbMcMnflfSQ7x0fXlUZD0hk+H9E/vDjwQ\n/6VKYTEb0xze6aXEbWjutdvOww14IFWzZIwHFEFpnsjlxXet0GSVuE5uhRQ6n8uP\nRmefeFEKFxEh6efXo+nkSxPvwQKBgQDP78HGkR9z5QjzPtSyJRbMLlZoRp3XMlWF\nJLDRj7A3Njfh2PxrR/kur8PpU0fgAy3h0E1wpHKpawHEhYfTPKFMUw1S6Nb+/Us/\n3GO11aCadWOXjUO0OVvVvqm8y89HqdKut/B7i9USMe/L3NsAr313n0ZrVB5uogqA\n6Scr66w62QKBgAvE0ZH7gdEybNnIeCF4mtyfz9JRAR+c7rLxb7sIrROwbYC/fuBy\nZ7TSBgkJ2nc3a03YgYbdGQgfaHWU01GULFh8FbZb2qqyYh8ajBuHO3RXP6KwFHuE\nLb2bqYlSZCVPJkIofehOtrzCX35kQIyUwOmQXuB0p/XA08MiHc0zUjtBAoGAZf8S\nSyeWiQ/Y0xCH3paI10EHi4DQHeYHwxabUUAtTPfgc30vXCRi237GF6aNRBnrILA/\nvDg+MlJV/KMPXBOKf1jh2UBzbYKrrbiahHA0pm9cmdNmWXolTPSIaB6FH37y5Fc/\ntCqEKreqC5LbLjvmzI2pSi5p+xSrGE7FsyqYQgkCgYAlnxEMt8R4awxLb+LIp/cy\nrJr7BustpQvG6uqSqVOY+inGFpVsVygeKcKWOQEZWJ4zNe2plnS3hxdKYlamxcD5\n/Lm9pURRnn+BXQVeGGRuCEplrnNmHFCmq5o+3VvMcMWrdvq5wUgBinqssI+BLqCK\nltM91zBS+0p9tOr2yx91Ig==\n-----END PRIVATE KEY-----\n",
+  "client_email": "simzam@foodspy-a3640.iam.gserviceaccount.com",
+  "client_id": "104854228800282028457",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/simzam%40foodspy-a3640.iam.gserviceaccount.com"
+}

@@ -1,0 +1,42 @@
+{
+  "DB": {
+    "CONNECTION_STRING": "mongodb://simzam:7bitsfacebook7@ds",
+    "DEFAULT_DB": "131151.mlab.com:31151/products",
+    "TRUWORTHS_DB": "163681.mlab.com:63681/truworths",
+    "USAVE_DB": "163301.mlab.com:63301/usave",
+    "DUMMY_DB": "https://foodspy-a3640.firebaseio.com",
+    "DUMMY_COLLECTION": "/",
+    "CONNECTION_OPTS": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": 300000,
+          "connectTimeoutMS": 30000
+        }
+      },
+      "replset": {
+        "socketOptions": {
+          "keepAlive": 300000,
+          "connectTimeoutMS": 30000
+        }
+      }
+    }
+  },
+  "FIREBASE": {
+    "BASE_CONFIG": {
+      "apiKey": "AIzaSyCOCVzBz1ixPxBmXDJTziQ_vRB62pEQsmw",
+      "authDomain": "foodspy-a3640.firebaseapp.com",
+      "databaseURL": "https://foodspy-a3640.firebaseio.com",
+      "projectId": "foodspy-a3640",
+      "storageBucket": "foodspy-a3640.appspot.com",
+      "messagingSenderId": "509953319531"
+    },
+    "SERVICE_ACCOUNT": "./config/foodspy-fa40e85ea7b6.json"
+  },
+  "SERVER": {
+    "PORT": 4300
+  },
+  "ENV": {
+    "PROD": "production",
+    "DEV": "development"
+  }
+}
