@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-		"start": "node app.js"
+		"start": "node app.js",
+    "prettier": "prettier --write --tab-width=2 --single-quote=true \"**/*.js\""
   },
   "author": "branchild",
   "license": "ISC",
