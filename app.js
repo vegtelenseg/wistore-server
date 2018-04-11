@@ -22,7 +22,7 @@ admin.initializeApp({
 const db = admin.database(),
   ref = db.ref(config.DB.DUMMY_COLLECTION);
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Methods',
@@ -42,7 +42,7 @@ const port = process.env.PORT || config.SERVER.PORT;
  * Returns, to callback, a snapshot of the up-to-date document
  * @param snapshot : contains the modified document from the database
  **/
-ref.on('child_changed', function(snapshot) {
+ref.on('child_changed', function (snapshot) {
   const changedItem = snapshot.val();
   io.emit('product changed', changedItem);
 });
@@ -50,7 +50,7 @@ ref.on('child_changed', function(snapshot) {
 app.set('port', port);
 
 /*if (process.env.NODE_ENV === config.ENV.PROD) {
-  app.use(express.static('src/build'));
+  app.use(app.static('src/build'));
 }*/
 
 app.use('/api/find-store', (req, res) => {
@@ -59,25 +59,26 @@ app.use('/api/find-store', (req, res) => {
 });
 
 app.get('/api/food', (req, res, next) => {
+  console.log("process.env.PORT: ", process.env.PORT);
   ref.once('value', snapshot => {
     return res.send(snapshot.val());
   });
 });
 
 server.listen(port, () => {
-  if (port >= 4300 && port < 4305) {
+  if (process.env.NODE_ENV !== 'production') {
     return console.log(`The server is running at http://localhost:${port}`);
   }
   return console.log(
     `The server is running at https://wistore-server.herokuapp.com:${
-      process.env.PORT
+    process.env.PORT
     }`
   );
 });
 
-io.sockets.on('connection', function(client) {
+io.sockets.on('connection', function (client) {
   console.log('Successfully connected to the server via socket transport :)');
-  client.on('disconnect', function() {
+  client.on('disconnect', function () {
     console.log('Disconnecting socket from the server');
   });
 });
