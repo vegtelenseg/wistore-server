@@ -22,7 +22,7 @@ admin.initializeApp({
 const db = admin.database(),
   ref = db.ref(config.DB.DUMMY_COLLECTION);
 
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Methods',
@@ -42,7 +42,7 @@ const port = process.env.PORT || config.SERVER.PORT;
  * Returns, to callback, a snapshot of the up-to-date document
  * @param snapshot : contains the modified document from the database
  **/
-ref.on('child_changed', function (snapshot) {
+ref.on('child_changed', function(snapshot) {
   const changedItem = snapshot.val();
   io.emit('product changed', changedItem);
 });
@@ -71,14 +71,14 @@ server.listen(port, () => {
   }
   return console.log(
     `The server is running at https://wistore-server.herokuapp.com:${
-    process.env.PORT
+      process.env.PORT
     }`
   );
 });
 
-io.sockets.on('connection', function (client) {
+io.on('connection', function(client) {
   console.log('Successfully connected to the server via socket transport :)');
-  client.on('disconnect', function () {
+  client.on('disconnect', function() {
     console.log('Disconnecting socket from the server');
   });
 });
