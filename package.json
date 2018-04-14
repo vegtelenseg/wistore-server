@@ -4,12 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-		"start": "node app.js"
+    "start": "node app.js",
+    "prettier": "prettier --write --tab-width=2 --single-quote=true \"**/*.js\""
   },
   "author": "branchild",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cross-env": "^5.1.4",
     "express": "^4.16.3",
     "express-firebase-middleware": "^2.0.0",
     "firebase": "^4.12.1",
